@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="no-referrer">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="css.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-2xl font-bold mb-6 text-center">Posts Management</h1>
+        <table id="post-table" class="w-full table-auto border-collapse border border-gray-300 mb-6">
+            <thead class="bg-gray-200">
+    <tr>
+        <th class="border border-gray-300 px-4 py-2">ID</th>
+        <th class="border border-gray-300 px-4 py-2">Image</th>
+        <th class="border border-gray-300 px-4 py-2">Title</th>
+        <th class="border border-gray-300 px-4 py-2">Category</th>
+        <th class="border border-gray-300 px-4 py-2">Price</th>
+        <th class="border border-gray-300 px-4 py-2">Actions</th>
+    </tr>
+</thead>
+            <tbody id="post-body">
+                
+            </tbody>
+        </table>
+        <div id="comments-display" class="mb-6">
+        </div>
+        <div class="bg-gray-50 p-4 rounded">
+            <h2 class="text-xl font-semibold mb-4">Add/Edit Post</h2>
+            <div class="flex flex-wrap gap-4">
+                <input type="text" id="id_txt" placeholder="ID (leave blank for new)" class="flex-1 px-3 py-2 border border-gray-300 rounded">
+                <input type="text" id="title_txt" placeholder="Title" class="flex-1 px-3 py-2 border border-gray-300 rounded">
+                <input type="text" id="views_txt" placeholder="Views" class="flex-1 px-3 py-2 border border-gray-300 rounded">
+                <input type="submit" value="Save" onclick="saveData()" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
